@@ -1,0 +1,322 @@
+
+:root {
+    --primary-dark: #333;
+    --secondary-dark: #444;
+    --primary-light: #eee;
+    --secondary-light: #ddd;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #content{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#content{
+    display: flex;
+}
+
+#project-panel{
+    height: 100%;
+    width: 25vw;
+    background-color: #373c3f;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+#main-panel{
+    height: 100%;
+    width: 75vw;
+    background-color: #2f3437;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display:flex;
+    padding:20px;
+    background-color:var(--primary-dark);
+    color:#eee;
+    justify-content: space-between;
+    align-content: center;
+   
+}
+
+
+.logo{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ gap:20px;
+
+}
+.fa-check-double{
+    font-size:40px
+}
+.main{
+    display:flex;
+    
+}
+.nav{
+    width:300px;
+    min-width: 250px;
+    padding: 20px;   
+    background-color:var(--secondary-light);
+    height:100vh;
+    
+
+}
+.default-projects-list{
+ display:flex;
+ flex-direction: column;
+}
+
+button{
+    
+    padding:10px 20px;
+
+}
+.nav button{
+    width:100%;
+}
+#project-header{
+    font-size: 32px;
+    color:var(--primary-light);
+    margin-top: 20px;
+    line-height: 30px;
+}
+button ,input{
+ border:none;
+
+}
+.project-prevew{
+    width:75vw;
+    background-color: var(--primary-light);
+    height:25vh;
+
+}
+
+.add-project-popup{
+ display:none;
+}
+
+
+.clicked{
+    display:block;
+}
+
+.input-add-project-popup{
+    width:100%;
+    padding:10px;
+    margin-top:2vh;
+
+}
+
+.add-project-popup-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:2vh;
+
+}
+.button-add-project-popup{
+    background-color: rgb(51, 165, 165);
+    transition: transform 0.5s;
+}
+.button-cancel-project-popup{
+    background-color: rgb(220, 131, 35);
+    transition: transform 0.5s;
+}
+.button-add-project-popup:hover{
+    background-color:rgb(60,180,170);
+    transform: translateY(-20%) ;
+}
+.button-cancel-project-popup:hover{
+    background-color: rgb(250,160,60);
+    transform: translateY(-20%) ;
+}
+
+
+.button-default-project{
+ background-color: var(--secondary-light);
+ transition: transform 0.5s;
+}
+ 
+
+.button-default-project:hover{
+    transform: translateY(-10%) ;
+    background-color: #7b93a1;
+}
+.button-default-project{
+    text-align: left;
+}
+.button-add-project{
+    background-color: var(--secondary-light);
+    text-align: left;
+    transition: transform 0.5s;
+}
+.button-add-project:hover{
+    background-color: #7b93a1;
+    transform: translateY(-10%) ;
+}
+.projects-title{
+ font-size:2em;
+ margin-top:3vh;
+
+}
+.nav button{
+    font-size:1em;
+}
+.button-add-project{
+    margin-top:3vh;
+    
+}
+.cancel{
+    display:none;
+}
+
+.project-item{
+    background-color: var(--secondary-light);
+    transition: transform 0.5s;
+    
+}
+.project-item:hover{
+    background-color: #7b93a1;
+    transform: translateY(-10%) ;
+}
+
+.project-preview{
+    width:100%;
+    background-color: rgb(200 209 212);
+}
+.activateTab{
+    font-weight: bold;
+}
+
+.project-preview h1{
+    padding: 0 10px;
+    margin-bottom: 10px;
+    margin-left: 4vw;
+    margin-top: 4vh;
+}
+    
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#addProject{
+    background-color: brown;
+  
+    font-size: 1em;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: var(--secondary-light);
+    text-align: left;
+    width: 50vw;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: transform 0.5s;
+}
+#addProject:hover{
+    background-color: #7b93a1;
+    transform: translateY(-10%) ;
+}
+
+.button-open-nav{
+    background-color:var(--secondary-dark)
+}
+
+.fa-bars{
+    background-color: rgb(209, 185, 185);
+}
+
+.To,.Do,.List{
+    margin-right:-1vw;
+   
+    
+}
+.To{
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: Items;
+}
+.Do{
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: Items;
+}
+.List{
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: Items;
+}
+.page-name{
+    background-color: blue;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: Items;
+
+}
+@keyframes anime{
+    0%{
+        opacity:0;
+        transition:rotateY(360deg);
+    }
+    100%{
+        opacity:1;
+        transition:rotateY(0);
+    }
+}@keyframes Items {
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translateX(60vw)
+      
+    }
+    50%{
+      transform: translateX(1vw);
+    }
+    100%{
+      opacity:1;
+      transform: scale(1) translateX(0px);
+    }
+  }
