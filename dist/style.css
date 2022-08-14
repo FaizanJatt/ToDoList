@@ -101,11 +101,10 @@ button ,input{
  border:none;
 
 }
-.project-prevew{
-    width:75vw;
-    background-color: var(--primary-light);
-    height:25vh;
-
+.project-preview{
+    width:81vw;
+    height:84vh;
+    background-color: rgb(200 209 212);
 }
 
 .add-project-popup{
@@ -196,10 +195,7 @@ button ,input{
     transform: translateY(-10%) ;
 }
 
-.project-preview{
-    width:100%;
-    background-color: rgb(200 209 212);
-}
+
 .activateTab{
     font-weight: bold;
 }
